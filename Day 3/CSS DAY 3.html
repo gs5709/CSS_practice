@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DAY3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(115 96 123);
+        }
+
+        .head {
+            letter-spacing: 8px;
+            font-family: 'Anton', sans-serif;
+            text-align: center;
+            font-size: 65px;
+            background-image: linear-gradient(rgb(0 0 0), rgb(120 103 70));
+            border: hidden;
+            border-radius: 50px;
+            color: #8560db;
+        }
+
+        .subhead {
+            text-align: center;
+            font-size: 25px;
+            margin: -35px 0px;
+        }
+        label{
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #c1c77c;
+        }
+        .text{
+            background-color: #ffe3fb;
+            width: 100%;
+        }
+        
+        .submit{
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+            border: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 35px;
+            width: 70%;
+            background-image:linear-gradient(#6f6f98, #b3b7e9);
+        }
+        .submit:hover{
+            color: rgb(155, 235, 187);
+            background-image: linear-gradient(#be9595, #c3caf0);
+        }
+        .star{
+            color: rgb(167, 13, 13);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="head">GARA TECH</h1>
+    <h3 class="subhead"><u>FeedBack Form</u></h3>
+    <br><br><br><br>
+    <form action="thank.html" class="form">
+        <label>Name <b class="star">*</b> </label><br>
+        <input class="text" type="text" placeholder="Enter your name" required><br><br>
+        <label>Email <b class="star">*</b> </label><br>
+        <input class="text" type="email" placeholder="Enter your email" required><br><br>
+        <label>Branch <b class="star">*</b> </label><br>
+        <div class="opt">
+            <select class="text" required>
+                <option value="select">select</option>
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="Ece">ECE</option>
+                <option value="MEC">MECHANICAL</option>
+                <option value="AERO">AEROSPACE</option>
+                <option value="AUTO">AUTOMOBILE</option>
+            </select>
+        </div><br><br>
+        <label>Year <b class="star">*</b> </label><br>
+        <input class="text" type="text" placeholder="Enter the year you are in" required><br><br>
+        <label>How would you like to rate DSA training? <b class="star">*</b> </label><br>
+        <input type="radio" name="rate" required>1 <input type="radio" name="rate" required>2 <input type="radio"
+            name="rate" required>3 <input type="radio" name="rate" required>4 <input type="radio" name="rate"
+            required>5<br><br>
+        <label>How would you like to rate WEB-D? <b class="star">*</b> </label><br>
+        <input type="radio" name="rate1" required>1 <input type="radio" name="rate1" required>2 <input type="radio"
+            name="rate1" required>3 <input type="radio" name="rate1" required>4 <input type="radio" name="rate1"
+            required>5<br><br>
+        <label>Comment <b class="star">*</b> </label><br>
+        <textarea class="text" cols="200" rows="10" placeholder="Any suggestion"></textarea><br><br>
+        <label>Will you tell your friends about <b>GARA TECH</b> ? <b class="star">*</b> </label><br>
+        <input type="radio" name="yes" required>Sure <input type="radio" name="yes" required>Maybe <input type="radio"
+            name="yes" required>No<br><br>
+          <center>
+        <input type="submit" class="submit" name="submit">
+    </center>
+    </form>
+</body>
+
+</html>
